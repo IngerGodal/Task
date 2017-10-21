@@ -34,6 +34,14 @@ public class Main {
         System.out.println("number1 >>> 1 : " + (number1 >>> 1));
         System.out.println("number2 >>> 1 : " + (number2 >>> 1));
 
+        System.out.println("_______Переворачивание числа_______");
+        System.out.println("Current number1 = " + number1);
+        System.out.println("Current number2 = " + number2);
+        System.out.println("~number1 : " + (~number1));
+        System.out.println("~number2 : " + (~number2));
+        System.out.println();
+
+
         System.out.println("_______Работа с Integer_______");
         System.out.println("Current number = " + number1);
         System.out.println("Integer number1 << 1 : " + Integer.toBinaryString(Integer.rotateLeft(number1, 1)));
