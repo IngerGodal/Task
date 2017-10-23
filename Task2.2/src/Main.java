@@ -41,7 +41,6 @@ public class Main {
         System.out.println("~number2 : " + (~number2));
         System.out.println();
 
-
         System.out.println("_______Работа с Integer_______");
         System.out.println("Current number = " + number1);
         System.out.println("Integer number1 << 1 : " + Integer.toBinaryString(Integer.rotateLeft(number1, 1)));
