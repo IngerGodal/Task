@@ -12,10 +12,10 @@ public class TwoNumbers {
         number2 = input.nextInt();
 
         System.out.println("_______Решение задачи_______");
-        solution(number1, number2);
+        solutionWhile(number1, number2);
     }
 
-    static void solution(int number1, int number2) {
+    static void solutionWhile(int number1, int number2) {
         int limitOfTry;
         int resultMultiplication;
         int countTry;
