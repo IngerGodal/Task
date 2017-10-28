@@ -22,6 +22,9 @@ public class TwoNumbers {
 		
 		System.out.println("_______Решение задачи через цикл DoWhile_______");
         temp.solutionDoWhile(number1, number2);
+		
+		System.out.println("_______Решение задачи 3_______");
+        temp.printCountOfTry(count);
 	}
 	
 	public int solutionWhile(int number1, int number2) {
@@ -113,6 +116,41 @@ public class TwoNumbers {
             System.out.println("Цель достигнута! Количество попыток : " + "[ " + countTry + " ]");
         } else {
             System.out.println("Цель не достигнута, попытки исчерпаны...");
+        }
+    }
+	
+	public void printCountOfTry(int cont) {
+        switch (cont) {
+            case 1:
+                System.out.println("Количество попыток: одна шт.");
+                break;
+            case 2:
+                System.out.println("Количество попыток: две шт.");
+                break;
+            case 3:
+                System.out.println("Количество попыток: три шт.");
+                break;
+            case 4:
+                System.out.println("Количество попыток: четыре шт.");
+                break;
+            case 5:
+                System.out.println("Количество попыток: пять шт.");
+                break;
+            case 6:
+                System.out.println("Количество попыток: шесть шт.");
+                break;
+            case 7:
+                System.out.println("Количество попыток: семь шт.");
+                break;
+            case 8:
+                System.out.println("Количество попыток: восемь шт.");
+                break;
+            case 9:
+                System.out.println("Количество попыток: девять шт.");
+                break;
+            case 10:
+                System.out.println("Количество попыток: десять шт.");
+                break;
         }
     }
 }
