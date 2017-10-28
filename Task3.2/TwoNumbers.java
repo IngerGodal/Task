@@ -16,6 +16,9 @@ public class TwoNumbers {
         System.out.println("_______Решение задачи 2_______");
         System.out.println("_______Решение задачи через цикл While_______");
         int count = temp.solutionWhile(number1, number2);
+		
+		System.out.println("_______Решение задачи через цикл For_______");
+        temp.solutionFor(number1, number2);
 	}
 	
 	public int solutionWhile(int number1, int number2) {
@@ -49,5 +52,34 @@ public class TwoNumbers {
             System.out.println("Цель не достигнута, попытки исчерпаны...");
         }
         return countTry;
+    }
+	
+	 public void solutionFor(int number1, int number2) {
+        int limitOfTry;
+        int resultMultiplication;
+        int countTry;
+        int tmp;
+        boolean flag;
+
+        limitOfTry = 10;
+        tmp = number1;
+        flag = false;
+
+        resultMultiplication = number1 * number2;
+
+        for (countTry = 1; countTry <= limitOfTry; countTry++) {
+            tmp += number2;
+
+            if (tmp > resultMultiplication) {
+                flag = true;
+                break;
+            }
+        }
+
+        if (flag == true) {
+            System.out.println("Цель достигнута! Количество попыток : " + "[ " + countTry + " ]");
+        } else {
+            System.out.println("Цель не достигнута, попытки исчерпаны...");
+        }
     }
 }
